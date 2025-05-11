@@ -24,5 +24,27 @@
     #menu li a {
         color: white;
     }
+    main {
+        display:flex;
+        flex-direction: column;
+    }
+    .coursework div {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+    .course h2 {
+        width: 96%;
+
+    }
+    .city {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+    .course h2 {
+        width: 96%;
+
+    }
 
 }
