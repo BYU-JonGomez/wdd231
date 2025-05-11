@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+    color: #333;
+    margin: 0.1rem;
+    padding: 0;
+    font-family: "Cinzel", serif;
+}
+
+.hamburger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+
+
+header {
+    background-color: #164e70;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+header span {
+    font-size: 2rem;
+}
+header img {
+    display:flex;
+    width: 60px;
+    height: 80px;
+}
+header nav {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    background-color: black;
+    width: 90%;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul a {
+    display:block;
+    color: white;    
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+.active {
+    color: #007BFF;
+}
+
+
+/* Main Content */
+main {
+    margin: 5%;
+}
+
+.coursework div {
+    display: flex;
+    border-radius: 0.25rem;
+    float: left;
+    width: 49%;
+    height: 20rem;
+    box-shadow: #333 0px 0px 10px;
+    flex-direction: column;
+}
+.course h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #164e70;
+    margin: 0;
+    color: white;    
+    font-size: medium;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 2%;
+}
+.course ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+.course ul a {
+    color: black;
+    text-decoration: none;
+}
+.city {
+    display: flex;
+    border-radius: 0.25rem;
+    float: right;
+    width: 49%;
+    height: 20rem;
+    box-shadow: #333 0px 0px 10px;
+}
+.city h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #164e70;
+    margin: 0;
+    color: white;    
+    font-size: medium;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 2%;
+}
+.cities {
+    width: 100%;
+    flex-direction: column;
+}
+.responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    width: 50%;
+}
+
+.cities p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.education {
+    display: grid;
+    width: 100%;
+    margin-top: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.education h2 {
+    display:grid; 
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    justify-content: center;
+    background-color: #164e70;
+    margin: 0;
+    color: white;    
+    font-size: medium;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 2%;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(29, 77, 114, 1);
+}
+
+footer p {
+    color:yellow;
+}
+.year {
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.white {
+    display:none;
+}
+

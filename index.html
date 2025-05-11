@@ -3,29 +3,68 @@
 <head>
     <meta charset= "UTF-8">
     <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="description of page using keywords">
+    <title>WDD231 - Web Frontend Development I - Jonathan Gómez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Week 1 work">
     <meta name="author" content="author">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-styles.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <header><h1>Header</h1></header> -->
-    <nav>
-        <ul>
-            <li><a href="#">Link</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div>
+        <img src="not_found.jpg" alt="" class=""> <span class="name">Jonathan Gómez</span>
+        </div>
+        <button class="hamburger">Menu</button>
+        <nav class="nav">
+            <button class="close">X</button>
+            <ul id="menu">
+                <li><a href="#" class="active">Home</a>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+                <li><a href="https://github.com/BYU-JonGomez">GitHub Profile</a></li>
+                <li><a href= "https://www.linkedin.com/in/jonathan-gomez-alegría-95ab2b260">Linkedin</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main>
-        <h2>Main Content</h2>
-        <p>Paragraph</p>
+        <h1>Home</h1>
+        <section class="coursework">
+            <div class="course">
+                <h2>Course Work</h2>
+                <ul>
+                    <li><a href="week1/index.html">Week 1</a></li>
+                    <li><a href="week2/index.html">Week 2</a></li> 
+                    <li><a href="week2/index.html">Week 2</a></li>  
+                </ul>
+            </div>
+        </section>
+        <section class="city">
+            <div class="cities"><h2>Viña del Mar, Chile</h2>
+            <img src="images/flowerswatch.webp" alt="viñadelmar" class="responsive">
+            <p>Watch of Flowers.</p>
+            </div>
+        </section>
+        <section class = "education">
+            <h2>Web and Computer Programming Certificate</h2>
+
+        </section>            
     </main> 
-    <section>
-        <h3>Section</h3>
-        <p>Paragraph</p>
-    </section>
     <footer>
-        <p>Footer</p>
-        <script src="script.js"></script>
+        <p class="year"><span>&copy;</span><span id="current-year"></span> Jonathan Gomez, Chile.</p>
+        
+        <p id="last-modified">This page was last modified on: </p>
+         <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
     </footer>
 </body>
     </html>

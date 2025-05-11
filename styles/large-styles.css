@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+	
+    .hamburger {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position:absolute;
+        top: 0;
+        right:0;
+        background-color: black;
+        padding: 1rem;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: end;
+    }
+    #menu li a {
+        color: white;
+    }
+
+}
