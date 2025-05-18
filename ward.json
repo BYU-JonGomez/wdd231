@@ -1,0 +1,21 @@
+{
+    "family_name": "Gómez",
+    "move_in_date": "2023-11-18",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Jonathan Gómez",
+            "gender": "M",
+            "birthdate": "1986-09-15"
+        },{
+            "name": "Katherine Martínez",
+            "gender": "F",
+            "birthdate": "1984-12-03"
+        },{
+            "name": "Antonella Gómez",
+            "gender": "F",
+            "birthdate": "2016-02-26"
+        }
+    ]
+}
