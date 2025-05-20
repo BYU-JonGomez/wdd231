@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+header, footer {
+    background-color: blue;
+    padding: 1rem;
+}
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    color: white;
+    align-items: end;
+}
+
+nav {
+    background-color: blue;
+}
+
+#myButton::before {
+    content: "\2630";
+    
+}
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor:pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+    /* Minimum size required for the button is 47px */
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 0.75rem 2vw; /* Minimun required size for the list items is 0.75rem*/
+    color: white;
+    text-decoration: none;
+}
+
+ul.menuLinks {
+    /* display: none; */
+    list-style-type: none;
+}
+
+li.current-menu-item a {
+    background-color:rgba(0,0,0,0.2);
+}
+
+ul.menuLinks {
+    /* display: none; */
+    list-style-type: none;
+}
+
+/* ul.menuLinks.open {
+    display: block;
+} */
+
+#myButton.open::before {
+    content: "\2715";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.open {
+    grid-template-rows: 1fr;
+}
