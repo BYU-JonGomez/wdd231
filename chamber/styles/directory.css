@@ -54,6 +54,7 @@ ul.menuLinks li a {
     color: rgb(4, 12, 85);
     text-decoration: none;
     font-weight: 800;
+    font-size: 0.75rem;
 }
 
 ul.menuLinks {
@@ -90,8 +91,7 @@ nav.open {
     grid-template-rows: 1fr;
 }
 
-
-.hero-container {
+.hero {
     width: 100%;
 }
 .hero {
@@ -99,14 +99,15 @@ nav.open {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 2% auto;
-    padding: 2% auto;
+    margin: 2%;
+    padding: 2%;
     width: 100%;
     height: auto;
 }
 
 .hero img {
-    width: 100%;
+    width: 900px;
+    height: auto;
     border-radius: 0.5rem; 
 }
  
@@ -135,7 +136,7 @@ nav.open {
     text-align: center;
     width: 100%;
     height: auto;
-    padding: 2% 0;
+    padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
@@ -153,7 +154,7 @@ nav.open {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 2% 0;
+    padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
@@ -171,7 +172,7 @@ nav.open {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 2% 0;
+    padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
@@ -188,19 +189,19 @@ nav.open {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 2% 0;
+    padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
 }
 
 #members {
-    display: flex;
+    display: block;
     gap: 2px;
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 2% 0;
+    padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
@@ -244,15 +245,32 @@ p {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
 }
+.directory-container {
+    gap: 2px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    border: 2px solid #a7a8b6;
+    border-radius: 0.5rem;
+    padding: 1%;
+}
 
 .member {
 	margin: 0.5rem;
 	padding: 0.5rem;
-	background-color: #eee;
 	border: 1px solid rgb(0 0 0 / 10%);
-	display: flex;
 	flex-direction: column;
 	align-items: center;
+    min-width: 25%;
+    max-width: 30%;
+}
+ul li {
+    justify-content: center;
+    max-width: 95%;
+    font-size: 0.54rem;
+
+
 }
 
 section > p {
@@ -288,4 +306,10 @@ li > img {
 
 .un {
 	list-style: none;
+}
+
+svg {
+    width: 70%;
+    height: 70%;
+    color: rgb(4, 12, 85);
 }

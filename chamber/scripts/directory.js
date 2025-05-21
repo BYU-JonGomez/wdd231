@@ -26,11 +26,11 @@ const displayMembers = (membersData) => {
     membersData.forEach((member) => {
         const section = document.createElement('section');
         const name = document.createElement('h2');
-        const description = document.createElement('h4');
+        const description = document.createElement('h3');
         const image = document.createElement('img');
-        const email = document.createElement('li');
-        const phone = document.createElement('li');
-        const website = document.createElement('li');
+        const email = document.createElement('ul','li');
+        const phone = document.createElement('ul', 'li');
+        const website = document.createElement('ul','li');
 
         name.textContent = `${member.name}`;
         description.textContent = `${member.description || ''}`;
@@ -41,8 +41,8 @@ const displayMembers = (membersData) => {
         image.setAttribute('src', member.imageurl);
         image.setAttribute('alt', `Placilla Business`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '50px');
-        image.setAttribute('height', '50px');
+        image.setAttribute('width', '75px');
+        image.setAttribute('height', '75px');
         image.setAttribute('display', 'flex');
         image.setAttribute('style', 'border-radius: 50%; margin-right: 10px;');
         
