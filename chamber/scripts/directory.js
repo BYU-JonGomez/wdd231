@@ -43,6 +43,11 @@ const displayMembers = (membersData) => {
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '50px');
         image.setAttribute('height', '50px');
+        image.setAttribute('display', 'flex');
+        image.setAttribute('style', 'border-radius: 50%; margin-right: 10px;');
+        
+        section.setAttribute('class', 'member');
+        section.setAttribute('style', 'display: flex; align-items: center; margin-bottom: 10px; padding : 10px; border: 1px solid #ccc; border-radius: 10px;');
 
         section.appendChild(name);
         section.appendChild(description);

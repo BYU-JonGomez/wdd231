@@ -41,4 +41,7 @@
     .forecast {
         width: 25%;
     }
+    .member {
+        width: 100%;
+    }
 }

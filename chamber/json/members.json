@@ -6,7 +6,7 @@
             "address": "Undécima 1605, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-1234",
             "website": "https://www.underpizza.com/locales",
-            "image": "underpizza.webp",
+            "imageurl": "images/underpizza.webp",
             "membershipLevel": 3,
             "description": "Leading pizza fast food.",
             "email": "info@underpizza.com"
@@ -16,7 +16,7 @@
             "address": "EL sauce 327, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "+56 9 622 54 599",
             "website": "https://www.topchicken.org",
-            "image": "topchicken.jpg",
+            "imageurl": "images/topchicken.webp",
             "membershipLevel": 2,
             "description": "Local supermarket with a wide variety of products.",
             "email": "contacto@topchicken.org"
@@ -26,7 +26,7 @@
             "address": "Undécima 1605, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-9012",
             "website": "https://www.smartfit.cl",
-            "image": "smartfit.svg",
+            "imageurl": "images/smartfit.webp",
             "membershipLevel": 1,
             "description": "Gym and wellness center.",
             "email": "contacto@smartfit.cl"
@@ -36,7 +36,7 @@
             "address": "Av Obispo Valdés Subercaseux 408, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-3456",
             "website": "https://www.instagram.com/panaderia_montgomery/?hl=en",
-            "image": "montgomery.jpg",
+            "imageurl": "images/montgomery.webp",
             "membershipLevel": 2,
             "description": "The oldest Bakery in the ward.",
             "email": "support@montgomery.cl"
@@ -46,7 +46,7 @@
             "address": "Av. Curauma Sur 790, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-7890",
             "website": "https://colegioumbral.com/home",
-            "image": "umbral.png",
+            "imageurl": "images/umbral.webp",
             "membershipLevel": 1,
             "description": "Basic school and high school with the higher grades in the ward.",
             "email": "hello@colegioumbral.com"
@@ -56,7 +56,7 @@
             "address": "Av. Obispo Valdés 1170, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-2345",
             "website": "https://lavanderiaplacilla.cl/",
-            "image": "laundry.png",
+            "imageurl": "images/laundry.webp",
             "membershipLevel": 3,
             "description": "Laundry with affordable prices for any kind of customer.",
             "email": "https://lavanderiaplacilla.cl/"
@@ -66,7 +66,7 @@
             "address": "Av. Lomas de la Luz 4650, Placilla de Peñuelas, Valparaíso, Chile",
             "phone": "(208) 555-6789",
             "website": "https://cannonhome.cl/",
-            "image": "cannon.png",
+            "imageurl": "images/cannon.webp",
             "membershipLevel": 2,
             "description": "Bed linen for variety of customer.",
             "email": "service@cannon.cl"
