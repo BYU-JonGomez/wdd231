@@ -12,27 +12,75 @@
     <meta property="og:image" content="images/commerce.webp">
     <meta property="og:locale" content="https://byu-jongomez.github.io/wdd231/chamber">   
 
-    <script src="scripts/index1.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
 
     <title>Chamber of Commerce - Placilla de Peñuelas - Chile</title>
     <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
-        <img src="images/flowerswatch.webp" alt="" class="" width="30px" height="30px"> <span class="name">Jonathan Gómez</span>
+        <img src="images/shield.png" alt="" class="" width="30px" height="30px"> <span class="name">Placilla de Peñuelas <br> Chamber of Commerce</span>
         <button id="myButton"></button>
     </header>
     <nav id="animateme">  
         <ul class="menuLinks">
-            <li><a href="#" title="Home">Page one</a></li>
-            <li class="current-menu-item"><a href="#">Chamber</a></li>  <!-- This is the standard way for wordpress for an active menu item -->
-            <li><a href="#" title="Service">PageThree</a></li>
-            <li><a href="#" title="History">Page Four</a></li>
+            <li><a href="#" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="#">Discover</a></li>  <!-- This is the standard way for wordpress for an active menu item -->
+            <li><a href="#" title="Directory">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="half-circle">&#xF288;</a></li>
         </ul>
     </nav>
+    <body>
+        <main class="hero-container">
+            <section class="hero">
+                <div>
+                    <img src="images/commerce.webp" alt="Placilla de Peñuelas Chamber of Commerce Hero Image" class="hero-img">  
+                </div>
+                <div class="hero-text">
+                        <h1>Welcome to Placilla de Peñuelas Chamber of Commerce</h1>
+                        <p>Connecting businesses and the community for a brighter future.</p>
+                    </div>
+            </section>
+        </main>
+            <div>
+                <h2 class="title" >Home</h2>
+            </div>
+        <main class="info-container">           
+            <div class="events">
+                <h2>Events</h2>
+                <p>Join our.</p>
+                <p>community events and activities to connect with local businesses and residents.</p>
+            </div>
+            <div class="current">
+                <h2>Current Weather</h2>
+                <p>onment for everyone.</p>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <p> Include weather information in here.</p>
+            </div>      
+        </main>
+        <main>
+            <div id="members"></div>
+        </main>
+    <footer>
+        <p class="year"><span>&copy;</span><span id="current-year"></span>
+        Jonathan Gomez, Valparaíso, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on:
+        </p>
+        <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
+    </footer>        
+        
     
 </body>
 </html>

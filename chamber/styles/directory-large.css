@@ -1,0 +1,44 @@
+@media only screen and (min-width: 320px) {
+
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover { 
+        background-color:rgba(30, 3, 3, 0.2);
+        text-decoration: underline;
+    }  
+    nav {
+        grid-template-rows: 1fr;
+    } 
+    .info-squares {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .square {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    } 
+    .info-container {
+        display:flex;
+        gap: 15px;
+    }
+    header img{
+        justify-content: center;
+        align-items: center;
+    }
+    .events {
+        width:50%
+    }
+    .current {
+        width: 25%;
+    }
+    .forecast {
+        width: 25%;
+    }
+}
