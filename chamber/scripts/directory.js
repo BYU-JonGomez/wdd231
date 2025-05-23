@@ -28,9 +28,9 @@ const displayMembers = (membersData) => {
         const name = document.createElement('h2');
         const description = document.createElement('h3');
         const image = document.createElement('img');
-        const email = document.createElement('ul','li');
-        const phone = document.createElement('ul', 'li');
-        const website = document.createElement('ul','li');
+        const email = document.createElement('li');
+        const phone = document.createElement('li');
+        const website = document.createElement('li');
 
         name.textContent = `${member.name}`;
         description.textContent = `${member.description || ''}`;
@@ -49,11 +49,9 @@ const displayMembers = (membersData) => {
         section.setAttribute('class', 'member');
         section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 20% 20% 60%;; padding: 10px; border: 1px solid #ccc; border-radius: 10px;');
 
-        email.setAttribute('style','display: block; position: relative; top: 10px; left: 10px;');
-        
-        phone.setAttribute('style','display: block; position: relative; top: 30px; left: 10px;');
-        
-        website.setAttribute('style','display: block; position: relative; top: 50px; left: 10px;');
+        email.setAttribute('style', 'margin-top:4.5rem')
+        phone.setAttribute('style', 'margin-top:6.5rem')
+        website.setAttribute('style', 'margin-top:8.5rem')
 
 
 
