@@ -44,4 +44,16 @@
     .member {
         width: 100%;
     }
+
+    .directory-container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #members {
+        display: flex;
+        flex-wrap: wrap;
+        width:auto;
+        gap:5px;
+    }
 }

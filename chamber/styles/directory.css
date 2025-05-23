@@ -150,14 +150,12 @@ nav.open {
 
 .current {
     display: grid;
-    gap: 2px;
-    justify-content: center;
+    gap: 1px;
     width: 100%;
     height: auto;
-    padding: 2%;
+    padding: 1%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
-    padding: 1%;
 }
 .current h2 {
     color: rgb(4, 12, 85);
@@ -207,7 +205,27 @@ nav.open {
     padding: 1%;
 }
 
+.weather_information {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+.weather_icon {
+    width: 40px;
+    height: auto;
+}
 
+.weather_information ul {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1rem;
+    list-style-type: none;
+}
+.weather_information li {
+    max-width: 95%;
+    font-size: 0.68rem;
+}
 
 
 
@@ -239,32 +257,30 @@ p {
 	margin: 0;
 }
 
-.grid {
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-}
 .directory-container {
+    display: flex;
     gap: 2px;
-    justify-content: center;
     width: 100%;
     height: auto;
     padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
-    padding: 1%;
+}
+#members {
+    display: block;
+    border: 1px solid #a7a8b6;
 }
 
 .member {
 	margin: 0.5rem;
 	padding: 0.5rem;
 	border: 1px solid rgb(0 0 0 / 10%);
-	flex-direction: column;
 	align-items: center;
     min-width: 25%;
     max-width: 30%;
 }
+
 ul li {
     justify-content: center;
     max-width: 95%;
@@ -292,18 +308,6 @@ li > img {
 	height: 30px;
 }
 
-.caption {
-	position: absolute;
-	top: 1.5rem;
-	right: 2rem;
-	border: 1px solid #ccc;
-	background-color: lightyellow;
-	padding: 0.25rem;
-	display: grid;
-	align-items: center;
-	grid-template-columns: 1rem 1fr;
-}
-
 .un {
 	list-style: none;
 }
@@ -312,4 +316,50 @@ svg {
     width: 70%;
     height: 70%;
     color: rgb(4, 12, 85);
+}
+
+.member h2 {
+    font-size: 1.2rem;
+    color: rgb(4, 12, 85);
+    font-weight: 800;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2;
+    text-align: center;
+    padding: 5px;
+}
+.member h3 {
+    padding:5px;
+    font-size: 0.7rem;
+    color: rgb(4, 12, 85);
+    font-weight: 800;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    text-align: center;
+}
+
+.member img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+
+.member ul {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end:4;
+    font-size: 0.45rem;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.member ul li {
+    max-width: 95%;
+    font-size: 0.68rem;
 }
