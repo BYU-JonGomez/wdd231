@@ -1,0 +1,8 @@
+main #current-temp {
+    display:flex;
+    justify-content: center;
+}
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}

@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    padding: 0.5em;
+    padding: 3em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+main {
+    margin: 3%;
 }
 
 header, footer {
@@ -20,11 +24,14 @@ header {
     align-items: end;
     font-weight: 800;
     font-size: 2rem;
+    gap: 40px;
 }
 
 header img {
-    width: 44px;
-    height: 44px;
+    justify-content: center;
+    align-self: center;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     align-content: center;
 }
@@ -100,28 +107,25 @@ nav.open {
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 2%;
-    padding: 2%;
-    width: 100%;
+    margin: 1%;
+    padding: 1%;
     height: auto;
 }
 
 .hero img {
-    width: 900px;
+    width: 100%;
     height: auto;
-    border-radius: 0.5rem; 
 }
  
 .hero-text {
     display: block;
+    width: 60%;
     align-self: end;
     position: absolute;
     text-align: right;
-    margin: 0 0 2% 0;
-    padding: 0;
+    margin: 0 11% 2% 0;
     color: white;
-    font-size: 1rem;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px black; 
 }
 
 .info-container {
@@ -195,7 +199,7 @@ nav.open {
     padding: 1%;
 }
 
-#members {
+#members, #spotlights {
     display: block;
     gap: 2px;
     justify-content: center;
@@ -227,16 +231,6 @@ nav.open {
 .weather_information li {
     max-width: 95%;
     font-size: 0.68rem;
-}
-
-
-
-
-
-footer{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
 }
 
 #keytitle {
@@ -287,8 +281,10 @@ ul li {
     justify-content: center;
     max-width: 95%;
     font-size: 0.54rem;
+}
 
-
+#section {
+    margin: 3%;
 }
 
 section > p {
@@ -315,9 +311,10 @@ li > img {
 }
 
 svg {
-    width: 70%;
-    height: 70%;
+    width: 20px;
+    height: 20px;
     color: rgb(4, 12, 85);
+    align-content: center;
 }
 
 .member h2 {
@@ -361,8 +358,19 @@ svg {
     height: 100%;
     overflow: hidden;
     max-width: 100%;
-    font-size: 0.5rem;
-
+    font-size: 0.7rem;
+}
+.member li  {
+    font-family: italic;
 }
 
 
+.cta-button {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px) ;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}

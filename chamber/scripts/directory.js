@@ -10,12 +10,6 @@ hamburguerElement.addEventListener('click', () => {
 const url = "json/members.json";
 const members = document.querySelector("#members");
 
-// async function getProphetData() {
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     console.table(data.prophets);
-// }
-
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
@@ -31,12 +25,15 @@ const displayMembers = (membersData) => {
         const email = document.createElement('li');
         const phone = document.createElement('li');
         const website = document.createElement('li');
+        const discounts = document.createElement('p')
+        const membershipLevel = document.createElement('a')
 
         name.textContent = `${member.name}`;
         description.textContent = `${member.description || ''}`;
         email.textContent = `EMAIL: ${member.email}`;
         phone.textContent = `PHONE: ${member.phone}`;
         website.textContent = `URL: ${member.website}`;
+        discounts.textContent = '50% discount this weekend'
 
         image.setAttribute('src', member.imageurl);
         image.setAttribute('alt', `Placilla Business`);
@@ -52,8 +49,8 @@ const displayMembers = (membersData) => {
         email.setAttribute('style', 'margin-top:4.5rem')
         phone.setAttribute('style', 'margin-top:6.5rem')
         website.setAttribute('style', 'margin-top:8.5rem')
-
-
+        discounts.setAttribute('style', 'margin-top: -2rem; color: red; font-style: italic;')
+        
 
         section.appendChild(name);
         section.appendChild(description);
@@ -61,6 +58,8 @@ const displayMembers = (membersData) => {
         section.appendChild(email);
         section.appendChild(phone);
         section.appendChild(website);
+        section.appendChild(discounts);        
+        section.appendChild(membershipLevel);
 
         members.appendChild(section);
     });
