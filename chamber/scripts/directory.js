@@ -46,11 +46,18 @@ const displayMembers = (membersData) => {
         section.setAttribute('class', 'member');
         section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 20% 20% 60%;; padding: 10px; border: 1px solid #ccc; border-radius: 10px;');
 
-        email.setAttribute('style', 'margin-top:4.5rem')
-        phone.setAttribute('style', 'margin-top:6.5rem')
-        website.setAttribute('style', 'margin-top:8.5rem')
-        discounts.setAttribute('style', 'margin-top: -2rem; color: red; font-style: italic;')
+        // Create a ul to contain the list items
+        const ul = document.createElement('ul');
+
+        ul.appendChild(email);
+        ul.appendChild(phone);
+        ul.appendChild(website);
+        members.appendChile(ul)
         
+        email.setAttribute('style', 'margin-top:4.5rem');
+        phone.setAttribute('style', 'margin-top:6.5rem');
+        website.setAttribute('style', 'margin-top:8.5rem');
+        discounts.setAttribute('style', 'margin-top: -2rem; color: blue; font-style: italic; transform: rotate(-10deg)');
 
         section.appendChild(name);
         section.appendChild(description);
@@ -66,8 +73,6 @@ const displayMembers = (membersData) => {
 };
 
 getMemberData();
-
-
 
 window.onload = function() {
     const temperature = 30; // Default temperature
@@ -92,3 +97,33 @@ function calculateWindChill(temp, windSpeed, unit = 'F') {
         ? 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temp * Math.pow(windSpeed, 0.16))
         : 13.12 + (0.6215 * temp) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temp * Math.pow(windSpeed, 0.16));
 }
+
+// Set timestamp on form load
+    document.getElementById('timestamp').value = new Date().toISOString();
+
+    // Modal logic
+    document.querySelectorAll('.modal-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const modalId = this.getAttribute('data-modal');
+            document.getElementById(modalId).showModal();
+        });
+    });
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', function() {
+        this.closest('dialog').close();
+        });
+    });
+
+    // Animate membership cards on load
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.membership-card').forEach((card, i) => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(40px)';
+        setTimeout(() => {
+        card.style.transition = 'opacity 0.7s, transform 0.7s';
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+        }, 200 + i * 200);
+    });
+});

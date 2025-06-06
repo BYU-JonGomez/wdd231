@@ -1,50 +1,19 @@
-@media (max-width: 640px) {
-	
-    .hamburger {
+@media only screen and (max-width: 600px) {
+    
+    .education #courses{ /*ok*/
         display: block;
     }
-    #menu {
-        display: none;
-    }
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position:absolute;
-        top: 0;
-        right:0;
-        background-color: black;
-        padding: 1rem;
-    }
-    .menu {
-        flex-direction: column;
-        align-items: end;
-    }
-    #menu li a {
-        color: white;
-    }
-    main {
-        display:flex;
-        flex-direction: column;
-    }
-    .coursework div {
+    .education .course-card { /*ok*/
+        display: block;
         width: 100%;
-        align-items: center;
-        margin: 0;
     }
-    .course h2 {
-        width: 96%;
-
-    }
-    .city {
+    main .coursework, .city { /*ok*/
+        display: block;
         width: 100%;
-        align-items: center;
-        margin: 0;
-    }
-    .course h2 {
-        width: 96%;
+        height: auto;
+    }    
 
-    }
 
 }
+	
+    

@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        True: true
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        True: true
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        True: true
+        completed: false
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        True: false
+        completed: false
     },
     {
         subject: 'WDD',
@@ -74,6 +74,43 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        Completed: false
+        Completed: true
     }
 ]
+
+  // Example course data
+const courses = [
+    { name: "WDD 130 - Web Fundamentals", credits: 3, completed: true },
+    { name: "WDD 131 - Dynamic Web Fundamentals", credits: 3, completed: true },
+    { name: "WDD 231 - Web Frontend Development I", credits: 3, completed: true },
+    { name: "CSE 121b - JavaScript Language", credits: 3, completed: false },
+    { name: "CSE 110 - Introduction to Programming", credits: 2, completed: true},
+    { name: "CSE 111 - Programming with functions", credits: 2, completed: false}
+];
+
+function renderCourses(filter) {
+    let filteredCourses = courses;
+    if (filter === "WDD") {
+    filteredCourses = courses.filter(course => course.name.startsWith("WDD"));
+    } else if (filter === "CSE") {
+        filteredCourses = courses.filter(course => course.name.startsWith("CSE"));
+}
+const coursesDiv = document.getElementById("courses");
+coursesDiv.innerHTML = filteredCourses.map(course => `
+    <div class="course-card${course.completed ? ' completed' : ''}">
+    <h3>${course.name}</h3>
+    <p>Credits: ${course.credits}</p>
+        ${course.completed ? '<span class="badge">Completed</span>' : ''}
+    </div>
+    `).join('');
+    document.getElementById("course-count").textContent = `The total number of courses listed below is ${filteredCourses.length}`;
+
+const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById("total-credits").textContent = `Total Credits: ${totalCredits}`;
+}
+
+                document.getElementById("all-courses-btn").addEventListener("click", () => renderCourses("ALL"));
+                document.getElementById("wdd-courses-btn").addEventListener("click", () => renderCourses("WDD"));
+                document.getElementById("cse-courses-btn").addEventListener("click", () => renderCourses("CSE"));
+
+                renderCourses("ALL");

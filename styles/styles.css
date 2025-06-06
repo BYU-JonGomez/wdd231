@@ -1,80 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.3;
-    color: #333;
-    margin: 0.1rem;
+* {
+    margin: 0;
     padding: 0;
-    font-family: "Cinzel", serif;
+    box-sizing: border-box;
 }
 
-.hamburger {
-    display: none;
+body {
+    padding: 3%;
+    font-family:"Cinzel", serif;
 }
 
-.close {
-    display: none;
+main {
+    margin: 3%;
 }
 
-
-
-header {
+header, footer {
     background-color: #164e70;
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2%;
 }
-
-header div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-}
-
-header span {
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: rgb(174, 177, 207);
+    align-items: end;
+    font-weight: 800;
     font-size: 2rem;
+    gap: 40px;
 }
+
 header img {
-    display:flex;
-    width: 60px;
-    height: 80px;
+    justify-content: center;
+    align-self: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    align-content: center;
 }
-header nav {
+
+nav {
     background-color: black;
     padding: 0;
     margin: 0;
 }
 
-header nav ul {
-    display: flex;
-    background-color: black;
-    width: 90%;
-    justify-content: space-between;
-    list-style: none;
-}
-header nav ul a {
-    display:block;
-    color: white;    
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
 nav a:hover {
-    color: #007BFF;
+    color: #007BFF
 }
 
-.active {
-    color: #007BFF;
+#myButton::before {
+    content: "\2630";
+    display: none;
 }
 
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor:pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+    /* Minimum size required for the button is 47px */
+}
 
-/* Main Content */
+ul.menuLinks li a {
+    display: block;
+    padding: 0.75rem 2vw; /* Minimun required size for the list items is 0.75rem*/
+    color: rgb(222, 223, 233);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+
+li.current-menu-item a {
+    background-color:rgba(0,0,0,0.2);
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+}
+
+/* ul.menuLinks.open {
+    display: block;
+} */
+
+#myButton.open::before {
+    content: "\2715";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
 main {
     margin: 5%;
 }
 
-.coursework div {
+.coursework {
     display: flex;
     border-radius: 0.25rem;
     float: left;
@@ -101,6 +134,7 @@ main {
     margin: 0;
     width: 100%;
     list-style-type: none;
+    padding: 5%;
 }
 .course ul a {
     color: black;
@@ -146,17 +180,15 @@ main {
 }
 
 .education {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
-    margin-top: 4px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    gap: 3px;
 }
 .education h2 {
-    display:grid; 
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    width: 100%;
     justify-content: center;
     background-color: #164e70;
     margin: 0;
@@ -166,31 +198,74 @@ main {
     border-top-right-radius: 0.25rem;
     padding: 2%;
 }
-
 footer {
+    color:white;
     text-align: center;
     justify-content: center;
-    background-color: rgba(29, 77, 114, 1);
 }
 
-footer p {
+footer p{
     color:yellow;
+    width: 100%;
+    height: auto;
 }
 .year {
-    color: white;
+    color:white;
 }
 
-.title {
-    text-align: center;
-}
-
-.images {
+#courses {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+
+}
+.filter {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
 }
 
-.white {
-    display:none;
+.education button {
+    background-color: rgba(180, 231, 200, 0.7);
+    padding: 1%;
+    border-radius: 0.5rem;
+    border: 1px;
 }
 
+.education .script {
+    display:flex;
+}
+
+.course-count {
+    width:100%;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5em;
+    margin-bottom: 2%;
+    background: #f9f9f9;
+    width: 30%;
+}
+.course-card.completed {
+    justify-content: center;
+    align-self: end;
+    border-color: #4caf50;
+    background: #e8f5e9;
+    box-shadow: 0 0 8px #4caf5033;
+}
+.badge {
+    justify-content: center;
+    background: #4caf50;
+    color: #fff;
+    padding: 0.2em 0.2em;
+    border-radius: 12px;
+    font-size: 0.9em;
+    position: relative;
+    top: 1em;
+    right: 1em;
+}
