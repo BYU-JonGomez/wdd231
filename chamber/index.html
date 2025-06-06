@@ -81,6 +81,28 @@
     <div class="directory-container">
         <div id="members"></div>
     </div>
+    <script>
+        // Fetch and display only members with membershipLevel 3
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(data => {
+                const membersContainer = document.getElementById('members');
+                membersContainer.innerHTML = ''; // Clear any existing content
+                data.members
+                    .filter(member => member.membershipLevel === 3)
+                    .forEach(member => {
+                        const card = document.createElement('div');
+                        card.className = 'member-card';
+                        card.innerHTML = `
+                            <h3>${member.name}</h3>
+                            <p>${member.address}</p>
+                            <p>${member.phone}</p>
+                            <a href="${member.website}" target="_blank">Visit Website</a>
+                        `;
+                        membersContainer.appendChild(card);
+                    });
+            });
+    </script>
 
     <footer>
         <p class="year"><span>&copy;</span><span id="current-year"></span>

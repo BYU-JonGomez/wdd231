@@ -46,13 +46,7 @@ const displayMembers = (membersData) => {
         section.setAttribute('class', 'member');
         section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 20% 20% 60%;; padding: 10px; border: 1px solid #ccc; border-radius: 10px;');
 
-        // Create a ul to contain the list items
-        const ul = document.createElement('ul');
-
-        ul.appendChild(email);
-        ul.appendChild(phone);
-        ul.appendChild(website);
-        members.appendChile(ul)
+       
         
         email.setAttribute('style', 'margin-top:4.5rem');
         phone.setAttribute('style', 'margin-top:6.5rem');
@@ -127,3 +121,12 @@ function calculateWindChill(temp, windSpeed, unit = 'F') {
         }, 200 + i * 200);
     });
 });
+
+ // Create a ul to contain the list items
+    const ul = document.createElement('ul');
+
+        ul.appendChild(email);
+        ul.appendChild(phone);
+        ul.appendChild(website);
+        members.appendChile(ul)
+
