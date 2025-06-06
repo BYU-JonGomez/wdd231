@@ -6,7 +6,6 @@ hamburguerElement.addEventListener('click', () => {
     hamburguerElement.classList.toggle('open');
 });
 
-
 const url = "json/members.json";
 const members = document.querySelector("#members");
 
@@ -22,32 +21,32 @@ const displayMembers = (membersData) => {
         const name = document.createElement('h2');
         const description = document.createElement('h3');
         const image = document.createElement('img');
+        const discounts = document.createElement('p');
+        // const membershipLevel = document.createElement('a');
+        
         const email = document.createElement('li');
         const phone = document.createElement('li');
         const website = document.createElement('li');
-        const discounts = document.createElement('p')
-        const membershipLevel = document.createElement('a')
 
         name.textContent = `${member.name}`;
         description.textContent = `${member.description || ''}`;
         email.textContent = `EMAIL: ${member.email}`;
         phone.textContent = `PHONE: ${member.phone}`;
         website.textContent = `URL: ${member.website}`;
-        discounts.textContent = '50% discount this weekend'
+        discounts.textContent = '50% discount this weekend';
 
         image.setAttribute('src', member.imageurl);
         image.setAttribute('alt', `Placilla Business`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '55px');
-        image.setAttribute('height', '55px');
+        image.setAttribute('width', '45%');
+        image.setAttribute('height', 'auto');
         image.setAttribute('display', 'flex');
-        image.setAttribute('style', 'border-radius: 50%; margin-right: 10px;');
+        image.setAttribute('style', 'border-radius: 50%; margin-right: 5px;');
         
         section.setAttribute('class', 'member');
-        section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 20% 20% 60%;; padding: 10px; border: 1px solid #ccc; border-radius: 10px;');
+        section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 20% 20% 60%;; padding: 10px; border: 1px solid #ccc; border-radius: 10px;font-size: 75%');
 
-       
-        
+        const ul = document.createElement('ul');
         email.setAttribute('style', 'margin-top:4.5rem');
         phone.setAttribute('style', 'margin-top:6.5rem');
         website.setAttribute('style', 'margin-top:8.5rem');
@@ -93,9 +92,11 @@ function calculateWindChill(temp, windSpeed, unit = 'F') {
 }
 
 // Set timestamp on form load
-    document.getElementById('timestamp').value = new Date().toISOString();
+    const timestampInput = document.getElementById('timestamp');
+    if (timestampInput) {
+        timestampInput.value = new Date().toISOString();
+    }
 
-    // Modal logic
     document.querySelectorAll('.modal-link').forEach(link => {
         link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -122,11 +123,9 @@ function calculateWindChill(temp, windSpeed, unit = 'F') {
     });
 });
 
- // Create a ul to contain the list items
-    const ul = document.createElement('ul');
+    
 
-        ul.appendChild(email);
-        ul.appendChild(phone);
-        ul.appendChild(website);
-        members.appendChile(ul)
-
+        // ul.appendChild(email);
+        // ul.appendChild(phone);
+        // ul.appendChild(website);
+        // members.appendChild(ul);
