@@ -109,8 +109,8 @@ const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credit
     document.getElementById("total-credits").textContent = `Total Credits: ${totalCredits}`;
 }
 
-                document.getElementById("all-courses-btn").addEventListener("click", () => renderCourses("ALL"));
-                document.getElementById("wdd-courses-btn").addEventListener("click", () => renderCourses("WDD"));
-                document.getElementById("cse-courses-btn").addEventListener("click", () => renderCourses("CSE"));
+    document.getElementById("all-courses-btn").addEventListener("click", () => renderCourses("ALL"));
+    document.getElementById("wdd-courses-btn").addEventListener("click", () => renderCourses("WDD"));
+    document.getElementById("cse-courses-btn").addEventListener("click", () => renderCourses("CSE"));
 
-                renderCourses("ALL");
+    renderCourses("ALL");

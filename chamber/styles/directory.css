@@ -199,7 +199,7 @@ nav.open {
     padding: 1%;
 }
 
-#members, #spotlights {
+/* #members, #spotlights {
     display: block;
     gap: 2px;
     justify-content: center;
@@ -209,7 +209,7 @@ nav.open {
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
     padding: 1%;
-}
+} */
 
 .weather_information {
     display: grid;
@@ -253,18 +253,20 @@ p {
 	margin: 0;
 }
 
-
 .directory-container {
-    display: flex;
+    display: block;
     gap: 2px;
     width: 100%;
     height: auto;
     padding: 2%;
     border: 2px solid #a7a8b6;
     border-radius: 0.5rem;
+    justify-content: center;
 }
+
 #members {
     display: block;
+    width: 100%;
     border: 1px solid #a7a8b6;
 }
 
@@ -273,14 +275,13 @@ p {
 	padding: 0.5rem;
 	border: 1px solid rgb(0 0 0 / 10%);
 	align-items: center;
-    min-width: 25%;
-    max-width: 30%;
+    width: 100%;
 }
 
 ul li {
     justify-content: center;
     max-width: 95%;
-    font-size: 0.54rem;
+    font-size: 0.8rem;
 }
 
 #section {
@@ -350,18 +351,12 @@ svg {
 }
 
 .member li {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end:4;
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
     max-width: 100%;
-    font-size: 0.7rem;
-}
-.member li  {
+    font-size: 1rem;
     font-family: italic;
 }
 
@@ -372,7 +367,6 @@ svg {
     padding: 1.3%;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px) ;
-    
 }
 
 .join-section {

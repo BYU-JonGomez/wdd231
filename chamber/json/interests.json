@@ -1,0 +1,59 @@
+{
+    "interests": [
+
+        {
+            "name": "Parque Laguna",
+            "address": "Laguna de la Luz, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Beautiful park with a lagoon, picnic areas, and walking trails.",
+            "image": "images/parquelaguna.webp"
+        },
+        {
+            "name": "Café del Lago",
+            "address": "Camino La Pólvora 1234, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Cozy café with a view of the lagoon, offering pastries and coffee.",
+            "image": "images/cafedellago.webp"
+        },
+        {
+            "name": "Biblioteca Placilla",
+            "address": "Av. Curauma Norte 1500, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Public library with a wide selection of books and study spaces.",
+            "image": "images/biblioteca.webp"
+        },
+        {
+            "name": "Farmacia Cruz Verde",
+            "address": "Av. Obispo Valdés 1200, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Pharmacy providing health products and consultations.",
+            "image": "images/cruzverde.webp"
+        },
+        {
+            "name": "Centro Deportivo Placilla",
+            "address": "Av. Curauma Sur 900, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Sports center with soccer fields, tennis courts, and a gym.",
+            "image": "images/centrodeportivo.webp"
+        },
+        {
+            "name": "Veterinaria Curauma",
+            "address": "Av. Lomas de la Luz 4700, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Veterinary clinic for pets and small animals.",
+            "image": "images/veterinaria.webp"
+        },
+        {
+            "name": "FerreChile",
+            "address": "Av. Obispo Valdés 1300, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Hardware store with tools, paint, and construction materials.",
+            "image": "images/ferrechile.webp"
+        },
+        {
+            "name": "Heladería Herrera Chiguay",
+            "address": "Laguna de la Luz 2, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Ice cream shop with homemade flavors and outdoor seating.",
+            "image": "/images/heladeria.webp"
+        },
+        {
+            "name": "Centro Cultural Placilla",
+            "address": "Av. Curauma Sur 1000, Placilla de Peñuelas, Valparaíso, Chile",
+            "description": "Cultural center hosting art exhibitions, workshops, and events.",
+            "image": "images/centrocultural.webp"
+        }
+    ]
+}

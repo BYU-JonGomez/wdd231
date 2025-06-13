@@ -24,9 +24,9 @@
         max-width: 100%;
         margin-bottom: 1rem;
     } 
-    .info-container {
+    .info-container {                       /*ok*/
         display:flex;
-        gap: 15px;
+        gap: 25px;
     }
     header img{
         justify-content: center;
@@ -41,22 +41,7 @@
     .forecast {
         width: 25%;
     }
-    .member {
-        width: 100%;
-    }
-
-    .directory-container {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    #members, #spotlights {
-        display: flex;
-        flex-wrap: wrap;
-        width:auto;
-        gap:5px;
-    }
-    
+       
     svg {
         margin: 0;
     }
@@ -86,10 +71,26 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    .directory-container {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .directory-container #members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .member {
+        width: 30%;
+    }
 
-
-
-
-
+    .member li {
+    font-size: 0.8rem;
 
 }
+
+
+
+
