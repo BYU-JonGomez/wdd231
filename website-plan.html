@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Plan - Mountain Trails Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: BLACK;   /* Seagreen */
+            --accent-color: #bfa046;    /* Gold */
+            --background-color: #f9f9f9;
+            --text-color: #222;
+        }
+        body {
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0 1rem;
+        }
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1.5rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            padding: 1rem 1.2rem;
+        }
+        .color-sample {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .color-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+            font-size: 0.9rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 700;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        }
+        .primary { background: var(--primary-color); color: #fff; }
+        .accent { background: var(--accent-color);}
+        .wireframes {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .wireframe {
+            background: #eee;
+            border: 2px dashed var(--primary-color);
+            border-radius: 8px;
+            padding: 1rem;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        .wireframe-title {
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        @media (min-width: 700px) {
+            .wireframes {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Royal Coffee - Site Plan</h1>
+    </header>
+
+    <section>
+        <h2>Catalog Website</h2>
+        <p><strong>Royal Coffe - Luxury Coffee for demanding customers.</strong></p>
+        <ul>
+            <li>This name was chosen to represent a website dedicated to inform to customers about available luxury coffee in Chile.</li>
+            <li>Optional domain availability: <em>www.royalcoffee.cl</em></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Site Purpose</h2>
+        <p>
+            The site provides information about the company, but more important than that is the product information, includingname, origin, price and other related information.
+        </p>
+    </section>
+
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>Which Coffee is the best to start the day?</li>
+            <li>Are you a light roasted coffee fan?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Color Schema</h2>
+        <ul>
+            <li><strong>Primary Color:</strong> black (<span style="color:var(--primary-color)">#000000</span>) - Used for headings, navigation, and key accents.</li>
+            <li><strong>Accent Color:</strong> Gold (<span style="color:var(--accent-color)">#bfa046</span>) - Used for buttons, highlights, and call-to-action elements.</li>
+            <li><strong>Background:</strong> Light gray (<span style="color:#f9f9f9">#f9f9f9</span>) - Used for page background.</li>
+        </ul>
+        <div class="color-sample">
+            <div class="color-box primary">Primary</div>
+            <div class="color-box accent">Accent</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Roboto</strong> - Used for headings and emphasized text.</li>
+            <li><strong>Roboto</strong> - Used for body text and general content.</li>
+        </ul>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:1.1rem; color:var(--primary-color);">Sample Heading (Montserrat)</p>
+        <p style="font-family: 'Roboto', Arial, sans-serif;">Sample body text (Roboto)</p>
+    </section>
+
+    <section>
+        <h2>Wireframe</h2>
+        <div class="wireframes">
+            <div class="wireframe">
+                <div class="wireframe-title">Mobile View</div>
+                <img src="https://dummyimage.com/300x500/cccccc/2e8b57&text=Mobile+Wireframe" alt="Mobile wireframe sketch" style="width:100%;border-radius:6px;">
+            </div>
+            <div class="wireframe">
+                <div class="wireframe-title">Desktop View</div>
+                <img src="https://dummyimage.com/500x300/cccccc/2e8b57&text=Desktop+Wireframe" alt="Desktop wireframe sketch" style="width:100%;border-radius:6px;">
+            </div>
+        </div>
+        <p style="font-size:0.95rem; color:#555; text-align:center; margin-top:1rem;">
+            (Wireframes are simple sketches showing layout for mobile and desktop views.)
+        </p>
+    </section>
+</body>
+</html>

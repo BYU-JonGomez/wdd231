@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+BODY {
+    background-color: #f9f9f9;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
 header {
     display: flex;
     flex-direction: row;
