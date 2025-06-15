@@ -29,35 +29,38 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-
 </head>
 <body>
     <header>
-        <header>
-        <div>
-        <img src="images/flowerswatch.webp" alt="" class=""> <span class="name">Jonathan Gómez</span>
-        </div>
-        <button class="hamburger">Menu</button>
-        <nav class="nav">
-            <button class="close">X</button>
-            <ul id="menu">
-                <li><a href="#" class="active">Home</a>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="finalproject/index.html">Final</a></li>
-                <li><a href="https://github.com/BYU-JonGomez">GitHub Profile</a></li>
-                <li><a href= "https://www.linkedin.com/in/jonathan-gomez-alegría-95ab2b260">Linkedin</a></li>
-            </ul>
-        </nav>
+        <img href="index.html" src="images/logo-transparent.png" alt="Royal Coffee Header Image" class="header-image">
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu" ></button>
     </header>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This is a sample homepage created to comply with the frontend checklist head section requirements.</p>
-        </section>
-    </main>
+    <nav id="animateme">
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="shopping.html" title="finalproject">Store</a></li>            
+        </ul>
+    </nav>
     <br>
+    <h1 class="intro">Welcome to the Royal Coffee homepage! <br>Here you can find the best premium coffee products.</h1>
+    <main>
+        <section class="banner">
+            <div class="banner-images">
+                <img src="images/01cup.jpg" alt="Banner 1" class="banner-img active">
+                <div class="banner-text active">Enjoy your morning with a perfect cup of coffee.</div>
+                <img src="images/01beans.jpg" alt="Banner 2" class="banner-img">
+                <div class="banner-text">Discover our premium coffee beans selection.</div>
+                <img src="images/01breakfast.jpg" alt="Banner 3" class="banner-img">
+                <div class="banner-text">Start your day with a delicious breakfast and coffee.</div>
+                <a href="shopping.html" class="banner-action-btn">Visit Our Store</a>
+            </div>
+        </section>
+        <section>
+            <h2>Where timeless elegance meets the art of coffee, <br> discover a new luxury experience<br> crafted for those who savor life with distinction.</h2>
+        </section>
+        <br>
+    </main>
     <footer>
         <p>&copy; 2024 Jonathan Gómez. All rights reserved.</p>
         <p id="last-modified">This page was last modified on: </p>

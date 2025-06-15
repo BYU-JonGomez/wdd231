@@ -1,0 +1,164 @@
+{ 
+    "products": [ 
+        {
+            "name": "Ethiopian Sunrise",
+            "origin": "Ethiopia",
+            "roasted_grade": "Light",
+            "format": "0.5kg",
+            "image": "ethiopian-sunrise.jpg",
+            "price_usd": 12.99
+        },
+        {
+            "name": "Colombian Supremo",
+            "origin": "Colombia",
+            "roasted_grade": "Medium",
+            "format": "1kg",
+            "image": "colombian-supremo.jpg",
+            "price_usd": 21.99
+        },
+        {
+            "name": "Sumatra Mandheling",
+            "origin": "Indonesia",
+            "roasted_grade": "Dark",
+            "format": "0.5kg",
+            "image": "sumatra-mandheling.jpg",
+            "price_usd": 13.99
+        },
+        {
+            "name": "Kenya AA",
+            "origin": "Kenya",
+            "roasted_grade": "Medium",
+            "format": "1kg",
+            "image": "kenya-aa.jpg",
+            "price_usd": 22.99
+        },
+        {
+            "name": "Guatemala Antigua",
+            "origin": "Guatemala",
+            "roasted_grade": "Medium-Dark",
+            "format": "0.5kg",
+            "image": "guatemala-antigua.jpg",
+            "price_usd": 14.49
+        },
+        {
+            "name": "Brazil Santos",
+            "origin": "Brazil",
+            "roasted_grade": "Light",
+            "format": "1kg",
+            "image": "brazil-santos.jpg",
+            "price_usd": 19.99
+        },
+        {
+            "name": "Costa Rica Tarrazu",
+            "origin": "Costa Rica",
+            "roasted_grade": "Medium",
+            "format": "0.5kg",
+            "image": "costa-rica-tarrazu.jpg",
+            "price_usd": 13.49
+        },
+        {
+            "name": "Jamaica Blue Mountain",
+            "origin": "Jamaica",
+            "roasted_grade": "Light",
+            "format": "1kg",
+            "image": "jamaica-blue-mountain.jpg",
+            "price_usd": 59.99
+        },
+        {
+            "name": "Honduras Marcala",
+            "origin": "Honduras",
+            "roasted_grade": "Medium",
+            "format": "0.5kg",
+            "image": "honduras-marcala.jpg",
+            "price_usd": 12.49
+        },
+        {
+            "name": "Peru Chanchamayo",
+            "origin": "Peru",
+            "roasted_grade": "Medium",
+            "format": "1kg",
+            "image": "peru-chanchamayo.jpg",
+            "price_usd": 18.99
+        },
+        {
+            "name": "Tanzania Peaberry",
+            "origin": "Tanzania",
+            "roasted_grade": "Medium-Light",
+            "format": "0.5kg",
+            "image": "tanzania-peaberry.jpg",
+            "price_usd": 15.49
+        },
+        {
+            "name": "Yemen Mocha",
+            "origin": "Yemen",
+            "roasted_grade": "Dark",
+            "format": "1kg",
+            "image": "yemen-mocha.jpg",
+            "price_usd": 29.99
+        },
+        {
+            "name": "Mexico Altura",
+            "origin": "Mexico",
+            "roasted_grade": "Medium",
+            "format": "0.5kg",
+            "image": "mexico-altura.jpg",
+            "price_usd": 11.99
+        },
+        {
+            "name": "Papua New Guinea Sigri",
+            "origin": "Papua New Guinea",
+            "roasted_grade": "Light",
+            "format": "1kg",
+            "image": "papua-new-guinea-sigri.jpg",
+            "price_usd": 23.99
+        },
+        {
+            "name": "Rwanda Bourbon",
+            "origin": "Rwanda",
+            "roasted_grade": "Medium",
+            "format": "0.5kg",
+            "image": "rwanda-bourbon.jpg",
+            "price_usd": 14.99
+        },
+        {
+            "name": "India Monsooned Malabar",
+            "origin": "India",
+            "roasted_grade": "Dark",
+            "format": "1kg",
+            "image": "india-monsooned-malabar.jpg",
+            "price_usd": 20.99
+        },
+        {
+            "name": "Sulawesi Toraja",
+            "origin": "Indonesia",
+            "roasted_grade": "Medium-Dark",
+            "format": "0.5kg",
+            "image": "sulawesi-toraja.jpg",
+            "price_usd": 15.99
+        },
+        {
+            "name": "Nicaragua Segovia",
+            "origin": "Nicaragua",
+            "roasted_grade": "Medium",
+            "format": "1kg",
+            "image": "nicaragua-segovia.jpg",
+            "price_usd": 17.99
+        },
+        {
+            "name": "Panama Geisha",
+            "origin": "Panama",
+            "roasted_grade": "Light",
+            "format": "0.5kg",
+            "image": "panama-geisha.jpg",
+            "price_usd": 34.99
+        },
+        {
+            "name": "Hawaiian Kona",
+            "origin": "Hawaii, USA",
+            "roasted_grade": "Medium-Light",
+            "format": "1kg",
+            "image": "hawaiian-kona.jpg",
+            "price_usd": 49.99
+        }
+    ]
+}

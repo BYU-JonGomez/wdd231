@@ -24,29 +24,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon-32x32.png">
-        
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
 </head>
 <body>
     <header>
-        <h1>Welcome to the Final Project</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="shopping.html">Store</a></li>
-            </ul>
-        </nav>
+        <img href="index.html" src="images/logo-transparent.png" alt="Royal Coffee Header Image" class="header-image">
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu" ></button>
     </header>
+    <nav id="animateme">
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="shopping.html">Store</a></li>            
+        </ul>
+    </nav>
+    <br>
+    <h1 class="intro">Royal Coffee.</h1>
     <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This is a sample homepage created to comply with the frontend checklist head section requirements.</p>
+        <section class="banner">
+            <div class="banner-images">
+                <img src="images/01cup.jpg" alt="Banner 1" class="banner-img active">
+                <div class="banner-text active">
+                    <p>Royal Coffee began as a humble dream in a small mountain village, where our founder roasted beans over an open fire, sharing warmth and stories with neighbors. The aroma of those first brews drew people from miles around, eager to taste something extraordinary.</p>
+                </div>
+                <img src="images/01beans.jpg" alt="Banner 2" class="banner-img">
+                <div class="banner-text">
+                    <p>As word spread, Royal Coffee grew, sourcing only the finest beans from sustainable farms. Our commitment to quality and community transformed us from a local favorite into a renowned name, celebrated for our rich flavors and ethical practices.</p>
+                </div>
+                <img src="images/01breakfast.jpg" alt="Banner 3" class="banner-img">
+                <div class="banner-text">
+                    <p>Today, Royal Coffee stands as a symbol of tradition and innovation, blending timeless techniques with modern luxury. We invite you to savor our legacy—crafted for those who appreciate the art of coffee and the joy of connection.</p>
+                </div>
+            </div>
         </section>
+        <section>
+            <h2>We invite you to visit our store and enjoy an experience crafted with care, elegance, and integrity — where every detail reflects our promise of tier-one service and your complete satisfaction.</h2>
+        </section>
+        <section class="store-location">
+            <h2>Find Us</h2>
+            <p>Visit our store at: <strong>Tarapacá 1331, Santiago, Chile</strong></p>
+            <div style="width:100%;max-width:600px;margin:auto;">
+                <iframe 
+                    src="https://www.google.com/maps?q=-33.4489,-70.6693&z=15&output=embed"
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Royal Coffee Location Map">
+                </iframe>
+            </div>
+        </section>
+        <br>
     </main>
     <br>
     <footer>
