@@ -74,10 +74,10 @@ li.current-menu-item a {
     background-color:rgba(0,0,0,0.2);
 }
 
-ul.menuLinks {
-    /* display: none; */
+/* ul.menuLinks {
+    /* display: none;
     list-style-type: none;
-}
+} */
 
 /* ul.menuLinks.open {
     display: block;
@@ -103,29 +103,22 @@ nav.open {
     width: 100%;
 }
 .hero {
-    display: flex;
-    position: relative;
+    display: block;
     justify-content: center;
     align-items: center;
     margin: 1%;
     padding: 1%;
     height: auto;
 }
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
  
 .hero-text {
-    display: block;
-    width: 60%;
-    align-self: end;
-    position: absolute;
-    text-align: right;
-    margin: 0 11% 2% 0;
+    width: 95%;
     color: white;
-    text-shadow: 5px 5px 5px black; 
+    position: absolute;
+}
+.hero-text h2 {
+    display:block;
+    width: 100%;
 }
 
 .info-container {
@@ -366,7 +359,6 @@ svg {
     text-decoration: none;
     padding: 1.3%;
     background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px) ;
 }
 
 .join-section {

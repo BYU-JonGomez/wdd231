@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/large-styles.css">
+
     <script src="scripts/course.js" defer></script> <!--done-->
     <script src="scripts/date.js" defer></script> <!--done-->
     <script src="scripts/navigation.js" defer></script> <!--done-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -28,7 +30,7 @@
 <body>
     <header>
         <img src="images/flowerswatch.webp" alt="" class=""><span class="name">Jonathan Gómez</span>
-        <button id="myButton"></button>
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu" ></button>
     </header>
     <nav id="animateme">
         <ul class="menuLinks">
@@ -39,7 +41,6 @@
             <li><a href= "https://www.linkedin.com/in/jonathan-gomez-alegría-95ab2b260">Linkedin</a></li>
         </ul>
     </nav>
-    
     <main>
         <h1>Home</h1>
         <section class="coursework">
@@ -58,8 +59,7 @@
             <img src="images/flowerswatch.webp" alt="viñadelmar" class="responsive">
             <p>Watch of Flowers.</p>
             </div>
-        </section>
-
+        </section>    
         <section class = "education">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="filter">
@@ -111,9 +111,8 @@
     </main> 
     <footer>
         <p class="year"><span>&copy;</span><span id="current-year"></span> Jonathan Gomez, Chile.</p>
-        
         <p id="last-modified">This page was last modified on: </p>
-         <script class="script">
+        <script class="script">
             const lastModifiedDate = document.lastModified;
             document.getElementById("last-modified").textContent += lastModifiedDate;
         </script>        

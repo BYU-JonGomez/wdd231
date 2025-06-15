@@ -79,7 +79,7 @@ const courses = [
 ]
 
   // Example course data
-const courses = [
+const course = [
     { name: "WDD 130 - Web Fundamentals", credits: 3, completed: true },
     { name: "WDD 131 - Dynamic Web Fundamentals", credits: 3, completed: true },
     { name: "WDD 231 - Web Frontend Development I", credits: 3, completed: true },

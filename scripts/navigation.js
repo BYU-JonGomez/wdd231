@@ -1,7 +1,7 @@
-const hamburguerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('#animateme');
+const menuButton = document.getElementById('myButton');
+const menuLinks = document.querySelector('ul.menuLinks');
 
-hamburguerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburguerElement.classList.toggle('open');
+menuButton.addEventListener('click', () => {
+  menuLinks.classList.toggle('open');
+  menuButton.classList.toggle('open'); // Add this line
 });

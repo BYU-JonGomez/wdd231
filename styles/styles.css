@@ -3,54 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    padding: 3%;
-    font-family:"Cinzel", serif;
-}
-
-main {
-    margin: 3%;
-}
-
-header, footer {
-    background-color: #164e70;
-    padding: 2%;
-}
 header {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    color: rgb(174, 177, 207);
-    align-items: end;
-    font-weight: 800;
-    font-size: 2rem;
-    gap: 40px;
-}
-
-header img {
+    display: flex;
     justify-content: center;
-    align-self: center;
-    width: 54px;
-    height: 54px;
-    border-radius: 50%;
-    align-content: center;
+    align-items: center;
+    background-color: #164e70;
+    color: white;
+    padding: 1rem;
 }
-
-nav {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+header .name {
+    font-size: 2rem;
+    margin-left: 1rem;
 }
-
-nav a:hover {
-    color: #007BFF
-}
-
 #myButton::before {
-    content: "\2630";
+    content: "\2630"; 
     display: none;
 }
-
 #myButton {
     font-size: 2rem;
     background: none;
@@ -62,61 +30,60 @@ nav a:hover {
     padding: 0.25rem 2vw;
     /* Minimum size required for the button is 47px */
 }
-
-ul.menuLinks li a {
-    display: block;
-    padding: 0.75rem 2vw; /* Minimun required size for the list items is 0.75rem*/
-    color: rgb(222, 223, 233);
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 0.75rem;
-}
-
-li.current-menu-item a {
-    background-color:rgba(0,0,0,0.2);
-}
-
-ul.menuLinks {
-    display: none;
-    list-style-type: none;
-}
-
-/* ul.menuLinks.open {
-    display: block;
-} */
-
 #myButton.open::before {
     content: "\2715";
 }
-
-nav {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.5s ease-out;
-}
-
-nav ul {
-    overflow: hidden;
-}
-
 nav.open {
     grid-template-rows: 1fr;
 }
 
-main {
-    margin: 5%;
+
+ul.menuLinks li a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.75rem 2vw; /* Minimum required size for the list items is 0.75rem */
+    color: white;
+    text-decoration: none;
+}
+.menuLinks a:hover { 
+        background-color:rgba(30, 3, 3, 0.2);
+        text-decoration: underline;
+}  
+
+.menuLinks {
+    /* display: none; */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #164e70;
+}
+li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.coursework {
-    display: flex;
-    border-radius: 0.25rem;
-    float: left;
-    width: 49%;
-    height: 20rem;
-    box-shadow: #333 0px 0px 10px;
-    flex-direction: column;
+header img {
+    justify-content: center;
+    align-self: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    align-content: center;
 }
-.course h2 {
+main { 
+    margin: 5%;
+}
+.coursework { /*ok*/
+    display: flex; 
+    border-radius: 0.25rem; 
+    float: left; 
+    width: 49%; 
+    height: 20rem; 
+    box-shadow: #333 0px 0px 10px;
+}   
+.course h2 { 
     display: flex;
     justify-content: center;
     background-color: #164e70;
@@ -127,25 +94,29 @@ main {
     border-top-right-radius: 0.25rem;
     padding: 2%;
 }
-.course ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin: 0;
+.course {
     width: 100%;
-    list-style-type: none;
+    flex-direction: column;
+}
+.course ul{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: left; 
+    margin: 0; 
+    width: 100%; 
+    list-style-type: none; 
     padding: 5%;
 }
-.course ul a {
-    color: black;
+.course ul a { 
+    color: black; 
     text-decoration: none;
 }
-.city {
-    display: flex;
-    border-radius: 0.25rem;
-    float: right;
-    width: 49%;
-    height: 20rem;
+.city { 
+    display: flex; 
+    border-radius: 0.25rem; 
+    float: right; 
+    width: 49%; 
+    height: 20rem; 
     box-shadow: #333 0px 0px 10px;
 }
 .city h2 {
@@ -170,7 +141,6 @@ main {
     margin: 5% auto;
     width: 50%;
 }
-
 .cities p {
     display: flex;
     justify-content: center;
@@ -178,7 +148,6 @@ main {
     margin: 0;
     padding: 0;
 }
-
 .education {
     display: flex;
     flex-wrap: wrap;
@@ -203,40 +172,42 @@ footer {
     text-align: center;
     justify-content: center;
 }
-
 footer p{
     color:yellow;
     width: 100%;
-    height: auto;
+    height: 2.2rem;
+    background-color: #164e70;
+    align-content: center;
 }
 .year {
     color:white;
 }
-
+#current-year  {
+    color:whitesmoke;
+}
+#last-modified {
+    color: yellow;
+}
 #courses {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 3%;
-
 }
 .filter {
     display: flex;
     justify-content: space-around;
     padding: 3%;
 }
-
 .education button {
     background-color: rgba(180, 231, 200, 0.7);
     padding: 1%;
     border-radius: 0.5rem;
-    border: 1px;
+    border: 1px solid #ccc;
 }
-
 .education .script {
     display:flex;
 }
-
 .course-count {
     width:100%;
     justify-self: center;
@@ -268,4 +239,20 @@ footer p{
     position: relative;
     top: 1em;
     right: 1em;
+}
+#keytitle {
+	font-size: larger;
+	grid-column: 1 / 3;
+}
+.key > div {
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 1px solid #bbb;
+}
+.key > p {
+	display: inline;
+	font-size: 0.75rem;
+}
+p {
+	margin: 0;
 }

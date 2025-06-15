@@ -32,6 +32,25 @@
         justify-content: center;
         align-items: center;
     }
+
+    img.hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 67%;
+        text-align: right;
+        color: white;
+        text-shadow: 5px 5px 5px black; 
+    }
+
+    .hero .hero-text h2 {
+        width: 100%;
+        font-size: 2rem;
+        align-items: end;;
+    }
+
     .events {
         width:50%
     }
@@ -88,9 +107,14 @@
 
     .member li {
     font-size: 0.8rem;
-
 }
-
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
 
 
 
