@@ -1,0 +1,148 @@
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+
+    .interest-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .interest-section {
+        display: grid;
+        grid-template-areas: 
+        
+        "name"
+        "image"
+        "address"
+        "description"
+        "button"
+        
+        ;
+    }
+    .interest-section h2 {
+        grid-area: name;
+        margin: 0.5rem 0;
+    }
+    .interest-section img {
+        grid-area: image;
+        width: 100%;
+        height: auto;
+    }
+    .interest-section {
+        grid-area: address;
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+    .interest-section p {
+        grid-area: description;
+        font-size: 0.8rem;
+        color: grey
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        padding: 0.2em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    main {
+        margin: 3%;
+    }
+
+    header, footer {
+        background-color: #e4e4e9;
+        padding: 1rem;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 44px auto 44px;
+        grid-template-rows: 1fr;
+        color: rgb(4, 12, 85);
+        align-items: end;
+        font-weight: 800;
+        font-size: 2rem;
+        gap: 40px;
+    }
+
+    header img {
+        justify-content: center;
+        align-self: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        align-content: center;
+    }
+
+    nav {
+        background-color: #e4e4e9;
+    }
+
+    #myButton::before {
+        content: "\2630";
+    }
+
+    #myButton {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor:pointer;
+        width: 100%;
+        text-align: right;
+        padding: 0.25rem 2vw;
+    }
+
+    ul.menuLinks li a {
+        display: block;
+        padding: 0.75rem 2vw; /* Minimun required size for the list items is 0.75rem*/
+        color: rgb(4, 12, 85);
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 0.75rem;
+    }
+
+    ul.menuLinks {
+        list-style-type: none;
+    }
+
+    li.current-menu-item a {
+        background-color:rgba(0,0,0,0.2);
+    }
+
+    #myButton.open::before {
+        content: "\2715";
+    }
+
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+    nav ul.menuLinks {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        display: block;
+    }
+    nav.open {
+        grid-template-rows: 1fr;
+    }
+    nav.open ul.menuLinks {
+        max-height: 500px; /* Adjust as needed for your menu size */
+    }
+
+}
+    
+
+
+
+
+

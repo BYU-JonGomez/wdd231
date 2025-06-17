@@ -7,13 +7,14 @@ hamburguerElement.addEventListener('click', () => {
 });
 
 
-const url = "json/members.json";
+const membersUrl = "json/members.json";
 const members = document.querySelector("#members");
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(membersUrl);
     const data = await response.json();
-    displayMembers(data.members);
+    // const level3Members = data.members.filter(member => member.membershipLevel === 2);
+    // displayMembers(level3Members);
 }
 
 const displayMembers = (membersData) => {
@@ -42,12 +43,12 @@ const displayMembers = (membersData) => {
         image.setAttribute('width', '90%');
         image.setAttribute('height', 'auto');
         image.setAttribute('display', 'flex');
-        image.setAttribute('style', 'border-radius: 50%; margin-right: 5px;');
+        image.setAttribute('style', 'border-radius: 0.5rem; margin-right: 5px;');
         
         section.setAttribute('class', 'member');
-        section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 15% 15% 40% 30%; padding: 10px; border: 1px solid #ccc; border-radius: 10px;');
+        section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: 15% 15% 40% 30%; padding: 10px; border: 1px solid #ccc; border-radius: 0.5rem;');
         
-        email.setAttribute('style', 'display: block; height:33%; grid-column-start: 2; grid-column-end: 3; grid-row-start: 3; grid-row-end: 5; align-items: start;');
+        email.setAttribute('style', 'display: block; margin-top: -33%; height:33%; grid-column-start: 2; grid-column-end: 3; grid-row-start: 3; grid-row-end: 5; align-items: start;');
         phone.setAttribute('style', 'display: block; margin-top:33%; height:33%; grid-column-start: 2; grid-column-end: 3; grid-row-start: 3; grid-row-end: 5;');
         website.setAttribute('style', 'display:block; margin-top:66%; height:33%; grid-column-start: 2; grid-column-end: 3; grid-row-start: 3; grid-row-end: 5;');
         discounts.setAttribute('style', 'margin-top: -2rem; color: red; font-style: italic; rotate: -10deg; font-weight: bold;font-stretch:50%');
@@ -128,3 +129,71 @@ function calculateWindChill(temp, windSpeed, unit = 'F') {
         // ul.appendChild(phone);
         // ul.appendChild(website);
         // members.appendChild(ul);
+
+const url = "json/interests.json";
+const interests = document.querySelector("#interests");
+
+async function getInterestData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayInterests(data.interests.slice(0, 8)); // Only first 8
+}
+
+const displayInterests = (interestsData) => {
+    interestsData.forEach((interest) => {
+        const card = document.createElement('section');
+        const title = document.createElement('h2');
+        const img = document.createElement('img');
+        img.alt = interest.alt || interest.name || 'Interest image';
+        const address = document.createElement('address');
+        const desc = document.createElement('p');
+        const btn = document.createElement('button');
+        
+        card.className = 'interest-section';    
+        title.textContent = interest.name || 'No Title';
+        
+        img.src = interest.imageurl;
+        img.loading = 'lazy';
+
+        card.setAttribute('class', 'interest-section');
+        img.setAttribute('style', 'width: 100%; height: auto; border-radius: 0.5rem;');
+
+        address.textContent = interest.address || 'No address provided';
+        address.setAttribute('class', 'interest-address');
+        
+        desc.textContent = interest.description || '';
+        
+        btn.textContent = 'Learn more';
+        btn.type = 'button';
+
+        // Assemble card
+        card.appendChild(title);
+        card.appendChild(img);
+        card.appendChild(address);
+        card.appendChild(desc);
+        card.appendChild(btn);
+
+        interests.appendChild(card);
+    });
+};
+
+getInterestData();
+
+    const messageArea = document.getElementById('visitor-message');
+        const lastVisit = localStorage.getItem('lastVisit');
+        const now = Date.now();
+
+        if (!lastVisit) {
+            messageArea.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const msInDay = 1000 * 60 * 60 * 24;
+            const daysPassed = Math.floor((now - Number(lastVisit)) / msInDay);
+            if (daysPassed < 1) {
+                messageArea.textContent = "Back so soon! Awesome!";
+            } else if (daysPassed === 1) {
+                messageArea.textContent = "You last visited 1 day ago.";
+            } else {
+                messageArea.textContent = `You last visited ${daysPassed} days ago.`;
+            }
+        }
+        localStorage.setItem('lastVisit', now);
