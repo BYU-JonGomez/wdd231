@@ -355,6 +355,7 @@
         width: 100%;
         height: 2.2rem;
         align-content: center;
+        font-size: 1.5vw;
     }
     .year {
         color: white;
