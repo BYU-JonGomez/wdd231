@@ -17,7 +17,7 @@
     <meta property="fb:app_id" content="Application ID"> 
     
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-small.css">
     <link rel="stylesheet" href="styles/final-large.css">
     <script src="scripts/final.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,13 +32,16 @@
 </head>
 <body>
     <header>
-        <img href="index.html" src="images/logo-transparent.png" alt="Royal Coffee Header Image" class="header-image">
-        <button class="menu-button" id="myButton" aria-label="Open navigation menu" ></button>
+         <a href="index.html">
+            <img src="images/logo-transparent.png" alt="Royal Coffee logo" class="header-image">
+        </a>
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu">
+        </button>
     </header>
     <nav id="animateme">
         <ul class="menuLinks">
-            <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="aboutus.html">About Us</a></li>
             <li><a href="shopping.html">Store</a></li>            
         </ul>
     </nav>
@@ -62,22 +65,40 @@
             </div>
         </section>
         <section>
-            <h2>We invite you to visit our store and enjoy an experience crafted with care, elegance, and integrity — where every detail reflects our promise of tier-one service and your complete satisfaction.</h2>
+            <h2>We invite you to visit our store <br>and enjoy an experience crafted with care, elegance, and integrity<br> — where every detail reflects our promise of<br> tier-one service and your complete satisfaction.</h2>
         </section>
         <section class="store-location">
             <h2>Find Us</h2>
             <p>Visit our store at: <strong>Tarapacá 1331, Santiago, Chile</strong></p>
             <div style="width:100%;max-width:600px;margin:auto;">
                 <iframe 
-                    src="https://www.google.com/maps?q=-33.4489,-70.6693&z=15&output=embed"
-                    width="100%" 
-                    height="350" 
-                    style="border:0;" 
+                    src ="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2596.494169425305!2d-70.65840142664379!3d-33.447715438542666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDI2JzUxLjgiUyA3MMKwMzknMTMuNiJX!5e1!3m2!1sen!2sus!4v1750300049311!5m2!1sen!2sus"
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
                     title="Royal Coffee Location Map">
                 </iframe>
+            </div>
+            <div class="form-container">
+                <h2>Contact us</h2>
+                <form class="contact-form" action="#" method="post">
+                    <label for="firstName">Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}" required>
+
+                    <label for="inquiries">Let us know your inquiries:</label>
+                    <textarea id="inquiries" name="inquiries" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </section>
         <br>

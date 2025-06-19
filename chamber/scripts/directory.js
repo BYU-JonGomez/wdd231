@@ -38,7 +38,7 @@ const displayMembers = (membersData) => {
         discounts.textContent = '50% discount this weekend'
 
         image.setAttribute('src', member.imageurl);
-        image.setAttribute('alt', `Placilla Business`);
+        image.setAttribute('alt', member.name || 'Placilla Business');
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '90%');
         image.setAttribute('height', 'auto');
@@ -153,10 +153,11 @@ const displayInterests = (interestsData) => {
         title.textContent = interest.name || 'No Title';
         
         img.src = interest.imageurl;
-        img.loading = 'lazy';
+        img.loading = 'auto';
+        img.style.width = '33vw';
+        img.style.height = 'auto';
 
         card.setAttribute('class', 'interest-section');
-        img.setAttribute('style', 'width: 100%; height: auto; border-radius: 0.5rem;');
 
         address.textContent = interest.address || 'No address provided';
         address.setAttribute('class', 'interest-address');

@@ -160,6 +160,9 @@
         grid-row-start: 2;
         grid-row-end: 7;
         align-self: center;
+        width: 20vw;
+        height: auto;
+        align-self: center;
     }
     .interest-section {
         grid-area: address;
@@ -186,12 +189,12 @@
         box-sizing: border-box;
     }
     body {
-        padding: 3em;
+        padding: 1em;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     main {
-        margin: 3%;
+        margin: 1%;
     }
 
     header, footer {
@@ -216,10 +219,6 @@
         height: auto;
         border-radius: 50%;
         align-content: center;
-    }
-
-    nav {
-        background-color: #e4e4e9;
     }
 
     #myButton::before {
@@ -260,6 +259,7 @@
 
     nav {
         display: grid;
+        background-color: #e4e4e9;
         grid-template-rows: 0fr;
         transition: grid-template-rows 0.5s ease-out;
     }

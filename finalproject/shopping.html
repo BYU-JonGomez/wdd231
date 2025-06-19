@@ -17,7 +17,7 @@
     <meta property="fb:app_id" content="Application ID"> 
     
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-small.css">
     <link rel="stylesheet" href="styles/final-large.css">
     <script src="scripts/final.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,14 +32,17 @@
 </head>
 <body>
     <header>
-        <img href="index.html" src="images/logo-transparent.png" alt="Royal Coffee Header Image" class="header-image">
-        <button class="menu-button" id="myButton" aria-label="Open navigation menu" ></button>
+         <a href="index.html">
+            <img src="images/logo-transparent.png" alt="Royal Coffee logo" class="header-image">
+        </a>
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu">
+        </button>
     </header>
     <nav id="animateme">
         <ul class="menuLinks">
-            <li class="current-menu-item"><a href="index.html" title="Home">Home</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="shopping.html">Store</a></li>            
+            <li class="current-menu-item"><a href="shopping.html">Store</a></li>            
         </ul>
     </nav>
     <br>
@@ -52,7 +55,18 @@
             <h2>Where timeless elegance meets the art of coffee, <br> discover a new luxury experience<br> crafted for those who savor life with distinction.</h2>
         </section>
     </main>
+    <section class="info-container">
+        <h2>Events</h2>
+        <div class="events">
+            <p>Join us for our upcoming coffee tasting event on March 15th, 2024. <br>Experience the rich flavors of our premium coffee blends and learn about the art of coffee brewing.</p>
+        </div>
+        <br>
+        <h2>News</h2>
+        <div class="news">
+            <script src="scripts/news.js" module></script>
+        </div>
     <br>
+    </section>  
     <footer>
         <p>&copy; 2024 Jonathan Gómez. All rights reserved.</p>
         <p id="last-modified">This page was last modified on: </p>

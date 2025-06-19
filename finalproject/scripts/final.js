@@ -12,16 +12,18 @@ let current = 0;
 }, 4000);
        
 /* navigation menu */
-const menuButton = document.getElementById('myButton');
-const menuLinks = document.querySelector('ul.menuLinks');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('myButton');
+  const nav = document.getElementById('animateme');
 
-menuButton.addEventListener('click', () => {
-  menuLinks.classList.toggle('open');
-  menuButton.classList.toggle('open'); // Add this line
+  menuButton.addEventListener('click', () => {
+    menuButton.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
 });
 
 /* product cards*/
-const url = "json/final.json";
+const url = "json/products.json";
 const products = document.querySelector("#products");
 
 async function getProductData() {
@@ -39,20 +41,41 @@ const displayProducts = (productsData) => {
         const roasted_grade = document.createElement('h4');
         const format = document.createElement('h4');
         const price = document.createElement('h3');
+        const button = document.createElement('button');
 
         name.textContent = `${product.name}`;
         origin.textContent = `${product.origin || ''}`;
         roasted_grade.textContent = `Roasted Grade: ${product.roasted_grade}`;
         format.textContent = `Format: ${product.format}`;
         price.textContent = `USD: ${product.price}`;
-        
+        button.textContent = "Reserve this product";
+
         image.setAttribute('src', product.imageurl);
         image.setAttribute('alt', `${product.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('style', 'border-radius: 50%; margin-right: 5px; width: 90%; height: auto; display: flex;');
-        
+        image.setAttribute('style', 'border-radius: 8px; margin-right: 5px; width: 90%; height: auto; display: flex;');
+
         section.setAttribute('class', 'product-card');
-        section.setAttribute('style', 'display: grid; grid-template-columns: 30% 70%; grid-template-rows: repeat(5, auto); padding: 10px; border: 1px solid #ccc; border-radius: 10px; gap: 5px; align-items: center;');
+        section.setAttribute('style', `
+            display: grid; 
+            grid-template-columns: 30% 70%; 
+            grid-template-rows: auto auto auto auto auto; 
+            position: relative;
+        `);
+
+        // Style the button to stick to the bottom of the card
+        button.setAttribute('style', `
+            grid-column: 1 / span 2;
+            margin-top: 16px;
+            align-self: end;
+            justify-self: center;
+            padding: 8px 16px;
+            background-color:black;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        `);
 
         section.appendChild(image);
         section.appendChild(name);
@@ -60,6 +83,7 @@ const displayProducts = (productsData) => {
         section.appendChild(roasted_grade);
         section.appendChild(format);
         section.appendChild(price);
+        section.appendChild(button);
 
         products.appendChild(section);
     });

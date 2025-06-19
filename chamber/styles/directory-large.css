@@ -20,12 +20,13 @@
     header {
         display: grid;
         grid-template-columns: 44px auto 44px;
-        grid-template-rows: 1fr;
+        grid-template-rows: 100%;
         color: rgb(4, 12, 85);
         align-items: end;
         font-weight: 800;
         font-size: 2rem;
         gap: 40px;
+        height: 6rem;
     }
 
     header img {
@@ -33,12 +34,15 @@
         align-self: center;
         width: 54px;
         height: 54px;
+        min-width: 54px;
+        min-height: 54px;
         border-radius: 50%;
         align-content: center;
     }
     nav {
         background-color: #e4e4e9;
     }
+    
     #myButton::before {
         content: "\2630";   
         display: none;
@@ -69,6 +73,7 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        height: 2rem;
     }
 
     li.current-menu-item a {
@@ -262,11 +267,14 @@
         min-height: 60px;
         font-size: smaller;
         text-align: center;
+        height: 30px;
     }
-
     li > img {
         width: auto;
         height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        display: inline-block;
     }
 
     .un {
@@ -495,18 +503,17 @@
     }
     .interest-section img {
         grid-area: image;
-        width: 100%;
-        height: auto;
-        padding: 1rem;
+        padding: 0.5rem;
+        justify-self: center;
     }
     .interest-section {
         grid-area: address;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 1rem;
     }
     .interest-section p {
         grid-area: description;
-        font-size: 1rem;
+        font-size: 0.7rem;
         padding: 1rem;
     }
     button {
@@ -519,9 +526,13 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    header img{
-        justify-content: center;
-        align-items: center;
+
+    img.hero-img {
+        width: 100%;
+        height: auto;
+        min-height: 300px; /* Set to your hero image's typical height */
+        position: relative;
+        display: block;
     }
     img.hero-img {
         width: 100%;
@@ -549,8 +560,12 @@
         width: 25%;
     }
     footer {
+        font-size: 1.2rem;
+        color: rgb(4, 12, 85);
+        margin-bottom: 1rem;
         text-align: center;
     }
+    
 
 }
 

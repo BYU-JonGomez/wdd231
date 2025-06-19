@@ -1,0 +1,394 @@
+@media only screen and (max-width: 100vw) {
+    /* CSS Reset */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 12vw;;
+    justify-content: space-between;
+    align-items: start;
+    
+    height: 12vw;
+    background-image: url('../images/01header.jpg');
+    background-size: none;
+    gap: 2%;
+    font-size: 0.8rem;
+  }
+
+a .header-image {
+    width: 70%;
+
+}
+
+  /* Menu Button */
+  #myButton::before {
+    content: "\2630";
+    font-size: 1rem;
+  }
+
+  #myButton {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+  }
+
+  #myButton.open::before {
+    content: "\2715";
+  }
+
+  /* Navigation */
+  nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+  }
+
+  nav ul {
+    overflow: auto;
+  }
+
+  nav.open {
+    grid-template-rows: 1fr;
+  }
+
+  ul.menuLinks {
+    list-style-type: none;
+    text-align: right;
+  }
+
+  ul.menuLinks li a {
+    display: block;
+    padding: 0.75rem;
+    color: black;
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+
+  li.current-menu-item a {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Intro Text */
+  .intro {
+    font-size: 5vw;
+    color: #C5A253;
+    text-shadow: 2px 2px 4px rgba(8, 8, 87, 0.2);
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 500;
+  }
+
+  /* Banner */
+  .banner {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .banner-images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .banner-img,
+  .banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .banner-img.active,
+  .banner-text.active {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+  }
+
+  .banner-text {
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner-action-btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+    background: #C5A253;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  .banner-action-btn:hover {
+    background: #997e3f;
+  }
+
+  /* Headings */
+  h2, strong {
+    width: 100%;
+    font-size: 2.5vw;
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 600;
+    color: #997e3f;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px #fff8dc;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #bfa046;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(90deg, rgba(191,160,70,0.15) 0%, rgba(255,255,255,0.05) 100%);
+  }
+
+  /* Products */
+  .products-container, #products {
+    display: block;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+  }
+
+  #products {
+    background-image: url('../images/01header.jpg');
+    background-size: cover;
+
+  }
+
+  .product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  }
+
+  /* Store Location Section */
+  .store-location {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "title title"
+      "invitation map"
+      "address map";
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .store-location h2 { grid-area: title; }
+
+  .store-location p {
+    grid-area: invitation;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin: 1em;
+  }
+
+  iframe {
+    grid-area: map;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    justify-content: left;
+  }
+
+  /* Form Container */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    grid-column: 1 / 3;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: linear-gradient(120deg, #fff8dc 0%, #f9f9f9 100%);
+    border: 2px solid #bfa046;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(191,160,70,0.15), 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-form label {
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    color: #997e3f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #C5A253;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1rem;
+    color: #2d2d2d;
+    font-family: inherit;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(191,160,70,0.05);
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #997e3f;
+    outline: none;
+    box-shadow: 0 0 0 2px #C5A25333;
+  }
+
+  .contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .contact-form button[type="submit"] {
+    background: linear-gradient(90deg, #C5A253 0%, #997e3f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(191,160,70,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+
+  .contact-form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #997e3f 0%, #C5A253 100%);
+    box-shadow: 0 4px 16px rgba(191,160,70,0.25);
+  }
+
+  .contact-form .form-title {
+    font-size: 2rem;
+    color: #bfa046;
+    font-family: 'Playfair Display', 'Cormorant Garamond', 'Times New Roman', serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 6px #fff8dc, 0 0 10px #bfa04633;
+  }
+
+  /* News & Events */
+  .news, .events {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 3vw;
+  }
+
+  .news ul li {
+    list-style-type: none;
+    padding: 1.5vw;
+  }
+
+  .news ul li a {
+    text-decoration: none;
+    pointer-events: fill;
+  }
+
+  /* Footer */
+  footer {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-color: #493a1a;
+  }
+
+  footer p {
+    color: #F6F1E9;
+    width: 100%;
+    height: 2rem;
+    align-content: center;
+    font-size: 3vw;
+  }
+
+    .year,
+    #current-year {
+        color: whitesmoke;
+    }
+
+    #last-modified {
+        color: #C5A253;
+    }
+}

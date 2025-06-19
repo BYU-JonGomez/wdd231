@@ -5,7 +5,7 @@
             "origin": "Ethiopia",
             "roasted_grade": "Light",
             "format": "0.5kg",
-            "image": "ethiopian-sunrise.jpg",
+            "imageurl": "images/1ethiopian-sunrise.webp",
             "price_usd": 12.99
         },
         {
@@ -13,7 +13,7 @@
             "origin": "Colombia",
             "roasted_grade": "Medium",
             "format": "1kg",
-            "image": "colombian-supremo.jpg",
+            "imageurl": "images/2colombian-supremo.webp",
             "price_usd": 21.99
         },
         {
@@ -21,7 +21,7 @@
             "origin": "Indonesia",
             "roasted_grade": "Dark",
             "format": "0.5kg",
-            "image": "sumatra-mandheling.jpg",
+            "imageurl": "images/3sumatra-mandheling.webp",
             "price_usd": 13.99
         },
         {
@@ -29,7 +29,7 @@
             "origin": "Kenya",
             "roasted_grade": "Medium",
             "format": "1kg",
-            "image": "kenya-aa.jpg",
+            "imageurl": "images/4kenya-aa.webp",
             "price_usd": 22.99
         },
         {
@@ -37,7 +37,7 @@
             "origin": "Guatemala",
             "roasted_grade": "Medium-Dark",
             "format": "0.5kg",
-            "image": "guatemala-antigua.jpg",
+            "imageurl": "images/5guatemala-antigua.webp",
             "price_usd": 14.49
         },
         {
@@ -45,7 +45,7 @@
             "origin": "Brazil",
             "roasted_grade": "Light",
             "format": "1kg",
-            "image": "brazil-santos.jpg",
+            "imageurl": "images/6brazil-santos.webp",
             "price_usd": 19.99
         },
         {
@@ -53,7 +53,7 @@
             "origin": "Costa Rica",
             "roasted_grade": "Medium",
             "format": "0.5kg",
-            "image": "costa-rica-tarrazu.jpg",
+            "imageurl": "images/7costa-rica-tarrazu.webp",
             "price_usd": 13.49
         },
         {
@@ -61,7 +61,7 @@
             "origin": "Jamaica",
             "roasted_grade": "Light",
             "format": "1kg",
-            "image": "jamaica-blue-mountain.jpg",
+            "imageurl": "images/8jamaica-blue-mountain.webp",
             "price_usd": 59.99
         },
         {
@@ -69,7 +69,7 @@
             "origin": "Honduras",
             "roasted_grade": "Medium",
             "format": "0.5kg",
-            "image": "honduras-marcala.jpg",
+            "imageurl": "images/9honduras-marcala.webp",
             "price_usd": 12.49
         },
         {
@@ -77,7 +77,7 @@
             "origin": "Peru",
             "roasted_grade": "Medium",
             "format": "1kg",
-            "image": "peru-chanchamayo.jpg",
+            "imageurl": "images/10peru-chanchamayo.webp",
             "price_usd": 18.99
         },
         {
@@ -85,7 +85,7 @@
             "origin": "Tanzania",
             "roasted_grade": "Medium-Light",
             "format": "0.5kg",
-            "image": "tanzania-peaberry.jpg",
+            "imageurl": "images/11tanzania-peaberry.webp",
             "price_usd": 15.49
         },
         {
@@ -93,7 +93,7 @@
             "origin": "Yemen",
             "roasted_grade": "Dark",
             "format": "1kg",
-            "image": "yemen-mocha.jpg",
+            "imageurl": "images/12yemen-mocha.webp",
             "price_usd": 29.99
         },
         {
@@ -101,7 +101,7 @@
             "origin": "Mexico",
             "roasted_grade": "Medium",
             "format": "0.5kg",
-            "image": "mexico-altura.jpg",
+            "imageurl": "images/13mexico-altura.webp",
             "price_usd": 11.99
         },
         {
@@ -109,7 +109,7 @@
             "origin": "Papua New Guinea",
             "roasted_grade": "Light",
             "format": "1kg",
-            "image": "papua-new-guinea-sigri.jpg",
+            "imageurl": "images/14papua-new-guinea-sigri.webp",
             "price_usd": 23.99
         },
         {
@@ -117,7 +117,7 @@
             "origin": "Rwanda",
             "roasted_grade": "Medium",
             "format": "0.5kg",
-            "image": "rwanda-bourbon.jpg",
+            "imageurl": "images/15rwanda-bourbon.webp",
             "price_usd": 14.99
         },
         {
@@ -125,7 +125,7 @@
             "origin": "India",
             "roasted_grade": "Dark",
             "format": "1kg",
-            "image": "india-monsooned-malabar.jpg",
+            "imageurl": "images/16india-monsooned-malabar.webp",
             "price_usd": 20.99
         },
         {
@@ -133,7 +133,7 @@
             "origin": "Indonesia",
             "roasted_grade": "Medium-Dark",
             "format": "0.5kg",
-            "image": "sulawesi-toraja.jpg",
+            "imageurl": "images/17sulawesi-toraja.webp",
             "price_usd": 15.99
         },
         {
@@ -141,7 +141,7 @@
             "origin": "Nicaragua",
             "roasted_grade": "Medium",
             "format": "1kg",
-            "image": "nicaragua-segovia.jpg",
+            "imageurl": "images/18nicaragua-segovia.webp",
             "price_usd": 17.99
         },
         {
@@ -149,7 +149,7 @@
             "origin": "Panama",
             "roasted_grade": "Light",
             "format": "0.5kg",
-            "image": "panama-geisha.jpg",
+            "imageurl": "images/19panama-geisha.webp",
             "price_usd": 34.99
         },
         {
@@ -157,7 +157,7 @@
             "origin": "Hawaii, USA",
             "roasted_grade": "Medium-Light",
             "format": "1kg",
-            "image": "hawaiian-kona.jpg",
+            "imageurl": "images/20hawaiian-kona.webp",
             "price_usd": 49.99
         }
     ]

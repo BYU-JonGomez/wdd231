@@ -30,8 +30,10 @@
     }
     .interest-section img {
         grid-area: image;
-        width: 100%;
+        width: 80vw;    
         height: auto;
+        justify-self: center;
+        border-radius: 8px;
     }
     .interest-section {
         grid-area: address;
