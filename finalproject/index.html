@@ -24,6 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon-32x32.png">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"></noscript>
+
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,10 +36,9 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="images/logo-transparent.png" alt="Royal Coffee logo" class="header-image">
+            <img src="images/logo-transparent.png" alt="Royal Coffee logo" class="header-image" width="300" height="300">
         </a>
-        <button class="menu-button" id="myButton" aria-label="Open navigation menu">
-        </button>
+        <button class="menu-button" id="myButton" aria-label="Open navigation menu"></button>
     </header>
     <nav id="animateme">
         <ul class="menuLinks">
@@ -49,11 +51,11 @@
     <main>
         <section class="banner">
             <div class="banner-images">
-                <img src="images/01cup.jpg" alt="Banner 1" class="banner-img active">
+                <img src="images/01cup.jpg" alt="Banner 1" class="banner-img active" width="1280" height="400">
                 <div class="banner-text active">Enjoy your morning with a perfect cup of coffee.</div>
-                <img src="images/01beans.jpg" alt="Banner 2" class="banner-img">
+                <img src="images/01beans.jpg" alt="Banner 2" class="banner-img" width="1280" height="400">
                 <div class="banner-text">Discover our premium coffee beans selection.</div>
-                <img src="images/01breakfast.jpg" alt="Banner 3" class="banner-img">
+                <img src="images/01breakfast.jpg" alt="Banner 3" class="banner-img" width="1280" height="400">
                 <div class="banner-text">Start your day with a delicious breakfast and coffee.</div>
                 <a href="shopping.html" class="banner-action-btn">Visit Our Store</a>
             </div>
