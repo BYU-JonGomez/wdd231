@@ -94,10 +94,35 @@
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s()]{7,}" required>
 
-                    <label for="inquiries">Let us know your inquiries:</label>
-                    <textarea id="inquiries" name="inquiries" rows="5" required></textarea>
+                    <label for="product">Product of Interest:</label>
+                    <select id="product-selector" name="product" required>
+                        <option value="">-- Select a product --</option>
+                        <option value="Royal Espresso">Royal Espresso</option>
+                        <option value="Classic Americano">Classic Americano</option>
+                        <option value="Velvet Cappuccino">Velvet Cappuccino</option>
+                        <option value="Golden Latte">Golden Latte</option>
+                        <option value="Mocha Supreme">Mocha Supreme</option>
+                        <option value="Hazelnut Dream">Hazelnut Dream</option>
+                        <option value="Caramel Delight">Caramel Delight</option>
+                        <option value="Vanilla Bliss">Vanilla Bliss</option>
+                        <option value="Choco Mint">Choco Mint</option>
+                        <option value="Cinnamon Swirl">Cinnamon Swirl</option>
+                        <option value="Iced Royal">Iced Royal</option>
+                        <option value="Cold Brew Classic">Cold Brew Classic</option>
+                        <option value="Nitro Infusion">Nitro Infusion</option>
+                        <option value="Royal Beans 250g">Royal Beans 250g</option>
+                        <option value="Royal Beans 500g">Royal Beans 500g</option>
+                        <option value="Royal Beans 1kg">Royal Beans 1kg</option>
+                        <option value="Decaf Beans 250g">Decaf Beans 250g</option>
+                        <option value="Decaf Beans 500g">Decaf Beans 500g</option>
+                        <option value="Decaf Beans 1kg">Decaf Beans 1kg</option>
+                        <option value="Gift Card">Gift Card</option>
+                    </select>
 
-                    <button type="submit">Send</button>
+                    <label for="inquiries">Let us know your inquiries:</label>
+                    <textarea id="inquiries" name="inquiries" rows="auto" required></textarea>
+
+                    <button type="submit" formaction="thanks.html" formmethod="get">Send</button>
                 </form>
             </div>
         </section>

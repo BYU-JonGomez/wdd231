@@ -77,6 +77,10 @@ const displayProducts = (productsData) => {
             cursor: pointer;
         `);
 
+        button.addEventListener('click', () => {
+            window.location.href = 'aboutus.html#form-container';
+        });
+
         section.appendChild(image);
         section.appendChild(name);
         section.appendChild(origin);
